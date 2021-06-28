@@ -12,8 +12,8 @@ services:
     restart: always
     user: root
     volumes:
-      - ~/docker/mssql/data:/var/opt/mssql/data
-      - ~/docker/mssql/backup:/var/opt/mssql/backup
+      - /mnt/docker/mssql/data:/var/opt/mssql/data
+      - /mnt/docker/mssql/backup:/var/opt/mssql/backup
 
 networks:
   mssql:
